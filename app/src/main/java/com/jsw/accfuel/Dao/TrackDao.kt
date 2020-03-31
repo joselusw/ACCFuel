@@ -11,7 +11,6 @@ interface TrackDao {
     @Query("SELECT * from Tracks")
     fun getTracks(): LiveData<List<Track>>
 
-
     @Insert
     fun insertTrack(track: Track)
 }

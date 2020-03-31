@@ -4,7 +4,7 @@ import android.app.Application
 import android.os.AsyncTask
 import androidx.lifecycle.LiveData
 import com.jsw.accfuel.Dao.TrackDao
-import com.jsw.accfuel.Dao.TrackDatabase
+import com.jsw.accfuel.Database.TrackDatabase
 import com.jsw.accfuel.Model.Track
 
 class TrackRepository(application: Application) {
