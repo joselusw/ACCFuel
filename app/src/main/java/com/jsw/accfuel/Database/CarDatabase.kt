@@ -53,7 +53,7 @@ class PopulateCarsAsyncTask(db: CarDatabase?) : AsyncTask<Unit, Unit, Unit>() {
         CarDao?.insertCar(Car(R.drawable.bmw_2019, "BMW M6 GT3", 1.32, "2019"))
         CarDao?.insertCar(Car(R.drawable.ferrari_2019, "Ferrari 488 GT3", 1.32, "2019"))
         CarDao?.insertCar(Car(R.drawable.honda_2019, "Honda NSX GT3 Evo", 1.32, "2019"))
-        CarDao?.insertCar(Car(R.drawable.lambo_evo_2019, "Lamborghini Huracan GT3 Evo", 1.32, "2019"))
+        CarDao?.insertCar(Car(R.drawable.lambo_evo_2019, "Lamborghini Huracan Evo", 1.32, "2019"))
         CarDao?.insertCar(Car(R.drawable.lambo_2019, "Lamborghini Huracan GT3", 1.32, "2019"))
         CarDao?.insertCar(Car(R.drawable.lexus_2019, "Lexus RC F GT3", 1.32, "2019"))
         CarDao?.insertCar(Car(R.drawable.mclaren_2019, "McLaren 720S GT3", 1.32, "2019"))

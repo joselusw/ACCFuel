@@ -10,7 +10,7 @@ import com.jsw.accfuel.Dao.TrackDao
 import com.jsw.accfuel.Model.Track
 import com.jsw.accfuel.R
 
-@Database(entities = [Track::class], version = 1)
+@Database(entities = [Track::class], version = 2)
 abstract class TrackDatabase : RoomDatabase() {
     abstract fun trackDao(): TrackDao
 
@@ -47,20 +47,20 @@ class PopulateTracksAsyncTask(db: TrackDatabase?) : AsyncTask<Unit, Unit, Unit>(
     private val trackDao = db?.trackDao()
 
     override fun doInBackground(vararg params: Unit?) {
-        trackDao?.insertTrack(Track(R.drawable.barcelona, "Barcelona", "1:42.2"))
-        trackDao?.insertTrack(Track(R.drawable.brands_hatch, "Brands Hatch", "1:23.310"))
-        trackDao?.insertTrack(Track(R.drawable.hungaroring, "Hungaroring", "2:01.407"))
-        trackDao?.insertTrack(Track(R.drawable.kyalami, "Kyalami", "2:01.407"))
-        trackDao?.insertTrack(Track(R.drawable.laguna_seca, "Laguna Seca", "2:01.407"))
-        trackDao?.insertTrack(Track(R.drawable.misano, "Misano", "2:01.407"))
-        trackDao?.insertTrack(Track(R.drawable.monza, "Monza", "2:01.407"))
-        trackDao?.insertTrack(Track(R.drawable.mount_panorama, "Mount Panorama", "2:01.407"))
-        trackDao?.insertTrack(Track(R.drawable.nurburgring, "Nürburgring", "2:01.407"))
-        trackDao?.insertTrack(Track(R.drawable.paul_ricard, "Paul Ricard", "2:01.407"))
-        trackDao?.insertTrack(Track(R.drawable.silverstone, "Silverstone", "2:01.407"))
-        trackDao?.insertTrack(Track(R.drawable.spa, "Spa Francorchamps", "2:01.407"))
-        trackDao?.insertTrack(Track(R.drawable.suzuka, "Suzuka", "1.59.9"))
-        trackDao?.insertTrack(Track(R.drawable.zandvoort, "Zandvoort", "2:01.407"))
-        trackDao?.insertTrack(Track(R.drawable.zolder, "Zolder", "2:01.407"))
+        trackDao?.insertTrack(Track(R.drawable.barcelona, "Barcelona", "1:46.714"))
+        trackDao?.insertTrack(Track(R.drawable.brands_hatch, "Brands Hatch", "1:24.317"))
+        trackDao?.insertTrack(Track(R.drawable.hungaroring, "Hungaroring", "1:44.163"))
+        trackDao?.insertTrack(Track(R.drawable.kyalami, "Kyalami", "1:42.876"))
+        trackDao?.insertTrack(Track(R.drawable.laguna_seca, "Laguna Seca", "1:24.632"))
+        trackDao?.insertTrack(Track(R.drawable.misano, "Misano", "1:34.165"))
+        trackDao?.insertTrack(Track(R.drawable.monza, "Monza", "1:58.293"))
+        trackDao?.insertTrack(Track(R.drawable.mount_panorama, "Mount Panorama", "2:04.306"))
+        trackDao?.insertTrack(Track(R.drawable.nurburgring, "Nürburgring", "1:56.961"))
+        trackDao?.insertTrack(Track(R.drawable.paul_ricard, "Paul Ricard", "1:53.926"))
+        trackDao?.insertTrack(Track(R.drawable.silverstone, "Silverstone", "2:00.746"))
+        trackDao?.insertTrack(Track(R.drawable.spa, "Spa Francorchamps", "2:20.994"))
+        trackDao?.insertTrack(Track(R.drawable.suzuka, "Suzuka", "2:02.765"))
+        trackDao?.insertTrack(Track(R.drawable.zandvoort, "Zandvoort", "1:37.945"))
+        trackDao?.insertTrack(Track(R.drawable.zolder, "Zolder", "1:31.081"))
     }
 }
